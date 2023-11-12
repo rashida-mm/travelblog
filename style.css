@@ -1,0 +1,420 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#start{
+    height: 651px;
+}
+#start .bg-image{
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(0.75);
+    top: 0;
+    z-index: -1;
+}
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fec400;
+    transition: 0.4s
+}
+.nav-item:hover::after {
+    width: 100%
+}
+.nav-link { 
+    transition: 0.2s
+}
+.head h2{
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 120px;
+    letter-spacing: 10px;
+    opacity: 0.68;
+    background-image: linear-gradient(45deg, black, white, black, white,black,white);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.head h3,p{
+ text-align: start;
+    margin-left: 7%;
+  justify-content: center;
+}
+.head h3{
+    color: white;
+    margin-top: 50px;
+    width: 750px;
+}
+.head p{
+       width: 500px;
+       text-align: justify;
+       color: white;
+}
+.based{
+    position: absolute;
+    bottom: 80px;
+    right: 70px;
+    color: white;
+    text-align: justify;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+ }
+.based span{
+    display: block;
+}
+#featuring h2{
+    text-align: center;
+    font-size:30px;
+    margin-top: 30px;
+    transition: all 1s;
+}
+#featuring h2:hover{
+    letter-spacing: 3px;
+}
+#featuring img{
+    width: 170px;
+    margin: 20px;
+}
+.gotopbtn{
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-size: 25px;
+    width: 35px;
+    border-radius: 50px;
+    text-align: center;
+    background-color:#fec400;
+    color: white;
+    z-index: 1;
+}
+.divider{
+    color: #fec400;
+    margin-bottom: 10.1px;
+   
+}
+.divider img{
+    width: 60px;
+    rotate: 30deg;
+}
+.abt{
+    margin-top: 0px;
+    padding: 50px;
+    height: 800px;
+}
+.abt h1{
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.abt p{
+    text-align: center;
+    margin: 30px;
+  width: 1000px;
+  margin-left: 140px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.abt a{
+    text-decoration: none;
+}
+.abt img{
+margin-left: 240px;
+border-radius: 20px;
+box-shadow: 4px 6px 8px grey;
+}
+.dest h1,h4,h2{
+    text-align: center;
+}
+.row h4{
+    text-shadow: 3px 6px 9px grey;
+}
+.dest .card img{
+    border-radius: 5px;
+    height: 400px;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+.overlay{
+    position: absolute;
+    color:rgb(252, 251, 251);
+    font-size:xxx-large;
+    top: 50%;   
+    left: 15%; 
+}
+.overlay1{
+    text-align: center;
+    position: absolute;
+    color:rgb(252, 251, 251);
+    font-size:xxx-large;
+    top: 40%;   
+    left: 5%;
+}
+.dest .card img:hover{
+  opacity: 0.85;
+  transform:scale(1.06) ;
+
+}
+.dest .row{
+    justify-content: space-evenly;
+}
+.city .card a{
+text-decoration: none;
+color: black;
+}
+.city .card{
+    transition: all 0.3s;
+}
+.city .card:hover{
+    transform:scale(1.06) ;
+}
+#blog h1{
+    font-size:70px;
+}
+#blog p,h2{
+    text-align: center;
+}
+.posts .card a{
+    text-decoration:none ;
+  text-align: center;
+}
+.posts .card{
+    transition: all 0.3s;
+}
+.posts .card:hover{
+    transform:scale(1.06) ;
+}
+#resources img{
+    width: 170px;
+    margin: 20px;
+}
+#resources a{
+    text-decoration: none;
+}
+.update .sub button{
+    margin-top: 60px;
+    border-radius: 50px;
+}
+.contacts a{
+    text-decoration: none;
+}
+#connect a{
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 850px) {
+    .navbar-brand img {
+        width: 200px; /* Adjust the width as needed */
+      }
+    
+      .head h2 {
+        font-size: 60px; /* Adjust the font size as needed */
+      }
+    
+      .head h3 {
+        font-size: 24px; /* Adjust the font size as needed */
+      }
+
+      #featuring h2 {
+        font-size: 40px; /* Adjust the font size as needed */
+      }
+    
+      #featuring img {
+        max-width: 80%; /* Adjust the maximum width as needed */
+        height: auto;
+      }
+      .divider img {
+        max-width: 70%; /* Adjust the maximum width as needed */
+      }
+      .abt p{
+        width: 600px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0;
+        font-size: 18px;
+      }
+      .abt img {
+        margin-left: 0;
+        width: 600px;
+        height: 400px;
+      }
+      .card {
+        width: 100%;
+      }
+    
+      #start .overlay {
+        font-size: 19px;
+      }
+    
+      #blog .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      #city .col-3 {
+        max-width: 50%;
+      }
+      #destination .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      #resources  .container.text-center a {
+        max-width: 50%;
+      }
+      #updates .text-center.bg-success {
+        padding: 20px;
+      }
+    
+    }
+@media only screen and (max-width: 650px) {
+    .navbar-brand img {
+        width: 150px; /* Adjust the width as needed */
+      }
+    
+      .head h2 {
+        font-size: 32px; /* Adjust the font size as needed */
+      }
+    
+      .head h3 {
+        font-size: 19px; /* Adjust the font size as needed */
+      }
+
+      #featuring h2 {
+        font-size: 32px; /* Adjust the font size as needed */
+      }
+    
+      #featuring img {
+        max-width: 90%; /* Adjust the maximum width as needed */
+        height: auto;
+      }
+      .divider img {
+        max-width: 80%; /* Adjust the maximum width as needed */
+      }
+      .abt {
+        padding: 20px 0;
+      }
+      .abt p{
+        width: 400px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0;
+        font-size: 16px;
+      }
+
+      .abt img {
+        margin-left: 0;
+        width: 400px;
+        height: 200px;
+      }
+      .card {
+        width: 100%;
+      }
+    
+      #start .overlay {
+        font-size: 16px;
+      }
+      #city .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      #destination .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      #blog .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      #resources .container.text-center a {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      #updates .text-center.bg-success h1 {
+        font-size: 1.5em;
+      }
+    
+}
+@media only screen and (max-width: 450px) {
+    .navbar-brand img {
+        width: 100px; /* Adjust the width as needed */
+      }
+    
+      .head h2 {
+        font-size: 24px; /* Adjust the font size as needed */
+      }
+    
+      .head h3 {
+        font-size: 16px; /* Adjust the font size as needed */
+      }
+
+      #featuring h2 {
+        font-size: 24px; /* Adjust the font size as needed */
+      }
+    
+      #featuring img {
+        max-width: 100%; /* Adjust the maximum width as needed */
+        height: auto;
+      }
+      .divider img {
+        max-width: 90%; /* Adjust the maximum width as needed */
+      }
+      .abt {
+        padding: 15px 0;
+      }
+
+      .abt p{
+        width: 350px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0;
+        font-size: 14px;
+      }
+    
+      .abt img {
+        margin-left: 0;
+        width: 350px;
+        height: 150px;
+      }
+
+      .card {
+        width: 100%;
+      }
+    
+      #start .overlay {
+        font-size: 12px;
+      }
+     #city .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      #blog .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      #destination .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .carousel-inner img {
+        height: 350px; /* Adjust the height as needed for smaller screens */
+      }
+    
+      .carousel-caption h2,
+      .carousel-caption p {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+      }
+    
+    #resources .container.text-center a {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      #updates .text-center.bg-success h4 {
+        font-size: 24px;
+      }
+}
